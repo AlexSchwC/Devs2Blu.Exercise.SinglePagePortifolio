@@ -1,0 +1,142 @@
+@import "_imports.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    header {
+        height: 100px;
+        width: 100%;
+        background-color: gray;
+        position: fixed;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+
+        .mummy-icon {
+            height: 5rem;
+            margin-right: 2rem;
+        }
+
+        h1 {
+            color: #0d632f;
+        }
+    }
+    
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(42, 42, 42);
+
+        .card {
+            border: 2px solid gray;
+            border-radius: 1rem;
+            background-color: #0d632f;
+            flex: 1;
+            margin: 8rem 2rem 1rem 2rem;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            color: #e6e6e6;
+            box-shadow: 0rem 1px 1rem #e6e6e6 ;
+
+            .card-wrapper {
+                display: flex;
+
+                .card-tecnologias {
+                    width: 50%;
+
+                    .lista-de-tecnologias {
+
+
+                        li {
+                            font-size: 1.5rem;
+                            list-style: none;
+                            border-bottom: 3px solid #9f409f;
+                            padding-bottom: 0.5rem;
+                            margin-bottom: 2rem;
+                            width: 90%;
+                        }
+                    }
+        
+                    h4 {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .card-experiencias {
+                    width: 50%;
+                    height: 100%;
+                    margin: auto;
+                }
+            }
+
+            .figures {
+                width: 80%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .funcao {
+                font-size: 3rem;
+                border-bottom: 4px solid #9f409f;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .lower-icons {
+                height: 10rem;
+            }
+        }
+
+        .attribution{
+            text-align: center;
+            
+            a {
+                text-decoration: none;
+                color: #ccc;
+                font-size: 0.8rem;
+                
+                :active {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 50px;
+        width: 100%;
+        background-color: #683b68;
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+    }
+}
